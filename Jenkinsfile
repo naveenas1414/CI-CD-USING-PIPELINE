@@ -6,7 +6,7 @@ stages {
 stage('checkout') {
 steps {
 
-git branch: 'master', url: 'https://github.com/naveenas1414/CI-CD-using-Docker.git'
+git branch: 'master', url: 'https://github.com/naveenas1414/CI-CD-USING-PIPELINE.git'
 
 }
 }
