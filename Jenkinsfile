@@ -31,7 +31,7 @@ sh 'docker tag samplewebapp naveenkumara14/test:$BUILD_NUMBER'
 stage('Publish image to Docker Hub') {
 
 steps {
-withDockerRegistry([ credentialsId: "naveenkumara14", url: "" ]) {
+withDockerRegistry([ credentialsId: "naveenkumara14", url: "https://github.com/naveenas1414/CI-CD-USING-PIPELINE.git" ]) {
 
 sh 'docker push naveenkumara14/test:$BUILD_NUMBER'
 // sh 'docker push naveenkumara14/test:$BUILD_NUMBER'
